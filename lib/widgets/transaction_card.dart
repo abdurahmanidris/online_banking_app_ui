@@ -4,8 +4,8 @@ import 'package:online_banking_app_ui/constants/app_textstyle.dart';
 import 'package:online_banking_app_ui/data/transaction_data.dart';
 
 class TransactionCard extends StatelessWidget {
-  final TransactionModel transaction;
-  const TransactionCard({Key key, this.transaction}) : super(key: key);
+  final TransactionModel? transaction;
+  const TransactionCard({Key? key, this.transaction}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class TransactionCard extends StatelessWidget {
       padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Colors.grey[300])),
+          border: Border.all(color: const Color.fromARGB(255, 224, 224, 224))),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
